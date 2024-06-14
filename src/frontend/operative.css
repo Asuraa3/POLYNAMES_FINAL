@@ -1,0 +1,95 @@
+/* style2.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcce6; /* Couleur de fond rose clair similaire à l'image */
+    color: #5e0049; /* Mauve foncé pour le texte */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Nécessaire pour le positionnement de l'image */
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 300px; /* Taille petite pour l'image */
+    height: auto;
+}
+
+h1 {
+    color: #d147a3; /* Rose mauve pour le titre */
+    margin-top: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+#username-display {
+    font-size: 1.2em;
+    color: #800080; /* Mauve */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.cell {
+    border: 2px solid #ff66b2; /* Rose plus foncé */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.cell.blue {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.cell.grey {
+    background-color: grey;
+    color: white;
+}
+
+.cell.black {
+    background-color: black;
+    color: white;
+}
+
+.cell:hover {
+    transform: scale(1.05);
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d147a3; /* Rose mauve similaire aux images */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #b33978; /* Rose mauve plus foncé */
+}
+
+.container {
+    background-color: #ffe6f2; /* Rose très clair pour les conteneurs */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}

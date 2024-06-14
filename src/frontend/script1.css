@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #ffccf9, #d4a0ff);
+}
+
+
+.bouton-rose-mauve:hover {
+    background-color: #B565A7; 
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.character {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.character.left .character-image {
+    position: absolute;
+    right: 0;
+    width: 150%;
+    clip-path: inset(0 50% 0 0);
+}
+
+.character.right .character-image {
+    position: absolute;
+    left: 0;
+    width: 150%;
+    clip-path: inset(0 0 0 50%);
+}
+
+.main-content {
+    flex: 1.5;
+    text-align: center;
+    padding: 20px;
+}
+
+.character-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+h1 {
+    color: #6a0dad;
+    font-size: 3em;
+    margin: 0;
+}
+
+h2 {
+    color: #6a0dad;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+p {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.btn {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5a0ba5;
+}
+
+.instructions {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+    color: #333;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instructions h3 {
+    color: #6a0dad;
+    margin-top: 0;
+}
+
+.instructions ol {
+    padding-left: 20px;
+}
+
+.start-btn {
+    background-color: #ff69b4; 
+    color: white;
+}
+
+.start-btn:hover {
+    background-color: #ff1493; 
+}
+
+

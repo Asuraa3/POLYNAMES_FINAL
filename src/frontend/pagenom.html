@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLYNAMES Online - Saisie du Nom d'Utilisateur</title>
+    <link rel="stylesheet" href="script2.css">
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault(); // Empêche la soumission du formulaire
+            navigateTo('pageChoixRole.html');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="character left">
+            <img src="femaleAgent.png" alt="" class="">
+        </div>
+        <div class="main-content">
+            <h1>POLYNAMES</h1>
+            <form action="#" method="post" class="user-form" onsubmit="handleSubmit(event)">
+                <label for="username">Entrez votre nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" required>
+                <button type="submit" class="btn">Commencer</button>
+            </form>
+        </div>
+        <div class="character right">
+            <img src="maleAgent.png" alt="" class="">
+        </div>
+    </div>
+</body>
+</html>
+

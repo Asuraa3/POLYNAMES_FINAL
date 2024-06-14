@@ -20,7 +20,7 @@ public class CorsHandler implements HttpHandler {
         exchange.getResponseHeaders().add("Access-Control-Allow-Credentials", "true");
 
         if ("OPTIONS".equalsIgnoreCase(exchange.getRequestMethod())) {
-            exchange.sendResponseHeaders(204, -1); // No Content for OPTIONS request
+            exchange.sendResponseHeaders(204, -1); 
             return;
         }
 
